@@ -146,6 +146,9 @@ interface FastEthernet0/24
  switchport access vlan 99
  switchport port-security                ! 开启端口安全
  switchport port-security mac-address sticky ! 自动记住插上的第一台电脑 MAC [cite: 127]
+
+<img width="3616" height="418" alt="image" src="https://github.com/user-attachments/assets/a09dcaba-b5d1-40b1-81d0-6c7af7fc68d9" />
+
 第三部分：常见问题排查 (Troubleshooting) & 注意点
 1. 为什么我的电脑获取不到 IP (169.254.x.x)？
 排查点 A (Helper): 检查 DS-BE 的 VLAN 接口下有没有 ip helper-address 192.168.70.254。没有这个，广播包出不去。
