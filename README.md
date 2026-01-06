@@ -166,5 +166,4 @@ interface FastEthernet0/24
 4. VTP 的坑
 注意点: 如果你手动在 AS 交换机上建 VLAN，可能会导致配置混乱。
 最佳实践: 确保 DS-BE 是 Server，AS-xx 是 Client。只要域名 (Domain) 一样，你在 DS-BE 上改一次 VLAN 名，下面全都会自动同步。
-<img width="3800" height="2800" alt="image" src="https://github.com/user-attachments/assets/a9892091-fcf1-4dca-8a07-98c638455bc6" />
 这张逻辑图展示了数据流向： PC -> Access Switch (VLAN Tag) -> Trunk -> Distribution Switch (SVI Routing/Helper) -> Core Router (NAT) -> Internet。
